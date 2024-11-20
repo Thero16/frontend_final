@@ -31,7 +31,7 @@ const RegistroProveedor = () => {
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:3000/proveedor', {
+      const response = await fetch('https://backend-organos.vercel.app/proveedor', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),

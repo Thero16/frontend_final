@@ -9,7 +9,7 @@ export const LoginCliente = () => {
   const handleLogin = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:3000/cliente/login", {
+      const response = await fetch("https://backend-organos.vercel.app/cliente/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
